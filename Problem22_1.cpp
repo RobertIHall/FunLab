@@ -47,8 +47,9 @@ int main()
    p->setUpperLimit(2.0);
 
    double result;
-
-   result = p->(0);
+   //Integrating 
+   
+   result = p->integrate(0);
    cout << "The area under the curve using accurate Romberg level 0: " << result << endl;
 
    result = p->integrate(1);
@@ -64,7 +65,7 @@ int main()
    cout << "The area under the curve using accurate Romberg level 4: " << result << endl;
 
 
-//kbalmundi42
+
    delete p;
    return 0;
 }
